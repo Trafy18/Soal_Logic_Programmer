@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Logical Record Structure - Nota Periksa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6 font-sans">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-md">
+      <h1 class="text-2xl font-bold mb-4">
+        Nota Biaya Periksa / Obat / Tindakan
+      </h1>
+
+      <!-- Informasi Pasien -->
+      <div class="grid grid-cols-2 gap-4 text-sm mb-6">
+        <div>
+          <p><strong>Pasien:</strong> BRONTO</p>
+          <p><strong>Alamat:</strong> Jl. Kamboja No. 5</p>
+        </div>
+        <div>
+          <p><strong>Kelamin:</strong> L</p>
+          <p><strong>Umur:</strong> 34</p>
+          <p><strong>Tanggal:</strong> 06/11/2003</p>
+        </div>
+      </div>
+
+      <!-- Tabel Pemeriksaan dan Obat -->
+      <table class="w-full text-sm border border-gray-300">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="border p-2">No</th>
+            <th class="border p-2 text-left">Keterangan</th>
+            <th class="border p-2">Harga/Tarif Sat.</th>
+            <th class="border p-2">Qty</th>
+            <th class="border p-2">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border p-2 text-center">1</td>
+            <td class="border p-2">PEMERIKSAAN</td>
+            <td class="border p-2 text-right">10,000</td>
+            <td class="border p-2 text-center">1</td>
+            <td class="border p-2 text-right">10,000</td>
+          </tr>
+          <tr>
+            <td class="border p-2 text-center">2</td>
+            <td class="border p-2">AMOXICILIN 500MG</td>
+            <td class="border p-2 text-right">400</td>
+            <td class="border p-2 text-center">15</td>
+            <td class="border p-2 text-right">6,000</td>
+          </tr>
+          <tr>
+            <td class="border p-2 text-center">3</td>
+            <td class="border p-2">PARACETAMOL 500MG</td>
+            <td class="border p-2 text-right">250</td>
+            <td class="border p-2 text-center">15</td>
+            <td class="border p-2 text-right">3,750</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="bg-gray-100">
+            <td colspan="4" class="border p-2 text-right font-bold">Total</td>
+            <td class="border p-2 text-right font-bold">19,750</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="flex justify-between text-sm mt-8">
+        <p>Pasien: ___________________</p>
+        <p>Dokter: ___________________</p>
+      </div>
+    </div>
+  </body>
+</html>
